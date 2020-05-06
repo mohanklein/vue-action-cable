@@ -1,6 +1,6 @@
 {
   "name": "vue-action-cable",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A simple Vue.js wrapper for Rails Action Cable.",
   "keywords": [
     "vue",
@@ -13,6 +13,7 @@
     "rails",
     "ruby on rails"
   ],
+  "homepage": "https://github.com/mohanklein/vue-action-cable",
   "author": "Mohan Klein",
   "license": "MIT",
   "private": false,
