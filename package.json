@@ -1,42 +1,39 @@
 {
-  "name": "vue-action-cable-wrapper",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-action-cable",
+  "version": "1.0.9",
+  "description": "A simple Vue.js wrapper for Rails Action Cable.",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "action",
+    "cable",
+    "actioncable",
+    "wrapper",
+    "websockets",
+    "rails",
+    "ruby on rails"
+  ],
+  "author": "Mohan Klein",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/vue-action-cable.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "README.md"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "webpack --config webpack.config.js --mode=production --progress"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "@rails/actioncable": "^6.0.2-2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-eslint": "~4.3.0",
-    "@vue/cli-service": "~4.3.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-classes": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
